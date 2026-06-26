@@ -1,10 +1,10 @@
-Browser Developer Tools
+Browser Developer Tools:
 
 purpose: Inspect HTTP security header and cookies configurations.
 
 Evidance: [Browser Developer Tools] (evidence/missing headers using browser developer tools)
 
-Nmap port scan
+Nmap port scan:
 
 purpose: perform basic network exposure analysis by scannong the target website for publicly accessible TCP ports.
 
@@ -13,7 +13,7 @@ Evidence:[Nmap scan](Evidence/Nmap output)
 results: the scan found no open TCP ports. All 1000 scanned ports were filtered, indicating firewall or network filtering controls.
 
 
-OWASP ZAP passive scan
+OWASP ZAP passive scan:
 
 purpose: identify security configuration u=issues without attacking the website.
 

@@ -1,22 +1,31 @@
-Browser Developer Tools:
+Future_CS_01 - passive cybersecurity auu=dit
 
-purpose: Inspect HTTP security header and cookies configurations.
+overview
 
-Evidance: [Browser Developer Tools] (evidence/missing headers using browser developer tools)
+This repository showcase the cybersecurity Task 1(2026) from the future interns internship program. A passive vulnerability assessment was performed on testphp.vulweb.com(https://testphp.vulnweb.com) to identify security without exploitation.
 
-Nmap port scan:
+key findings
 
-purpose: perform basic network exposure analysis by scannong the target website for publicly accessible TCP ports.
+1. missing content security policy(CSP) - Medium risk
+2. missing strict-transport-security (HSTS)- Medium risk
+3. missing Anti-Clickjacking Protection- Medium risk
+4. missing X-content-type-options- Low risk
+5. Timestamp disclosure-Low risk
+6. Network expore- Low risk
 
-Evidence:[Nmap scan](Evidence/Nmap output)
+Recommendations
 
-results: the scan found no open TCP ports. All 1000 scanned ports were filtered, indicating firewall or network filtering controls.
+1. imlement CSP & HSTS headers
+2. configure anti-clickjacking nosniff
+3. remove unnecessary timestamp disclosures
+4. continue firewall monitoring & regular assessments
 
+Deliveries
 
-OWASP ZAP passive scan:
+1. Vulnerability Assessment Report
+2. Evidence screenshots & tool output(/evidence)
+3. README summarizing scope, findings and recommendations
 
-purpose: identify security configuration u=issues without attacking the website.
+conclusion
 
-Evidence: [ OWSAP ZAP] (evidence/ zap-request-responce & zap_alert-details)
-
-results: the passive scan identified missing HTTP security hearders, including content security policy (CSP) and strict-transport-security (HSTS) along with other low-risk configuration issues.
+this assessment highlights medium-risk gaps in HTTP security headers and confirms effective firewall controls by applying the recommended fixes, the website's security posture will be strengthened against common web threats.

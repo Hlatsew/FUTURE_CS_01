@@ -1,8 +1,16 @@
-Future_CS_01 - passive cybersecurity auu=dit
+Future_CS_01 - passive cybersecurity audit
 
 overview
 
-This repository showcase the cybersecurity Task 1(2026) from the future interns internship program. A passive vulnerability assessment was performed on testphp.vulweb.com(https://testphp.vulnweb.com) to identify security without exploitation.
+This repository showcases the cybersecurity Task 1(2026) from the future interns internship program. A passive vulnerability assessment was performed on testphp.vulweb.com(https://testphp.vulnweb.com) to identify security weaknesses without exploitation.
+
+Tools Used
+
+1. Google chrome
+2. Browser Developer Tools
+3. Nmap
+4. OWASP ZAP
+
 
 key findings
 
@@ -11,16 +19,16 @@ key findings
 3. missing Anti-Clickjacking Protection- Medium risk
 4. missing X-content-type-options- Low risk
 5. Timestamp disclosure-Low risk
-6. Network expore- Low risk
+6. Network exposure- Low risk
 
 Recommendations
 
-1. imlement CSP & HSTS headers
+1. implement CSP & HSTS headers
 2. configure anti-clickjacking nosniff
 3. remove unnecessary timestamp disclosures
 4. continue firewall monitoring & regular assessments
 
-Deliveries
+Deliverables
 
 1. Vulnerability Assessment Report
 2. Evidence screenshots & tool output(/evidence)
